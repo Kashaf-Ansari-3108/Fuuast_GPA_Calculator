@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUUAST GPA Calculator</title>
+    <link rel="icon" href="./fuuast-logo-36D75CB714-seeklogo.com.png" type="image/icon type">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-light ">
+        <div class="container-fluid">
+           <h1 class="display-1"> <img height="100px" width="100px" src="./fuuast-logo-36D75CB714-seeklogo.com.png" alt=""> FUUAST GPA Calculator</h1>
+          <p class="lead">Use this calculator to calculate grade point average (GPA) and generate a GPA report.</p>
+        </div>
+      </nav>
+    <table class="table one table-dark table-hover shadow-lg ">
+        <tr>
+            <th class="display-6">Course</th>
+            <th class="display-6">Credits</th>
+            <th class="display-6">Marks</th>
+        </tr>
+        <tr>
+            <td><input  class="form-control course"  type="text" id="subject1"></td>
+            <td> <input  class="form-control credits" maxlength = "1"  type="text" id="creditHours1"></td>
+            <td><input  class="form-control marks" maxlength="3" type="text" id="marks1"></td>
+        </tr>
+        <tr>
+            <td><input  class="form-control course" type="text" id="subject2"></td>
+            <td><input class="form-control credits"  maxlength = "1"  type="text" id="creditHours2"></td>
+            <td><input class="form-control marks" maxlength="3" type="text" id="marks2"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control course"  type="text" id="subject3"></td>
+            <td><input class="form-control credits"  maxlength = "1"  type="text" id="creditHours3"></td>
+            <td><input class="form-control marks" maxlength="3" type="text" id="marks3"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control course"  type="text" id="subject4"></td>
+            <td> <input class="form-control credits"  maxlength = "1"  type="text" id="creditHours4"></td>
+            <td><input class="form-control marks" maxlength="3" type="text" id="marks4"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control course"  type="text" id="subject5"></td>
+            <td><input class="form-control credits"  maxlength = "1"  type="text" id="creditHours5"></td>
+            <td><input class="form-control marks" maxlength="3" type="text" id="marks5"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control course"  type="text" id="subject6"></td>
+            <td><input class="form-control credits"  maxlength = "1"  type="text" id="creditHours6"></td>
+            <td><input class="form-control marks" maxlength="3" type="text" id="marks6"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button class="btn btn-secondary" onclick="submit()">Submit</button></td>
+        </tr>
+    </table>
+    <!-- <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <h1 class="display-3">GPA: 3.7</h1>
+        </div>
+      </nav>
+    
+    <table class="table table-success table-striped">
+        <tr>
+            <td class="h4">S.No</td>
+            <td class="h4">Course</td>
+            <td class="h4">Credit</td>
+            <td class="h4">Marks</td>
+            <td class="h4">Alphabetic Grade</td>
+            <td class="h4">Numeric Grade</td>
+            <td class="h4">Product</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Data Strucure & Algorithm</td>
+            <td>3</td>
+            <td>89</td>
+            <td>A</td>
+            <td>4</td>
+            <td>12</td>
+        </tr>
+        <tr>
+        <td>-</td>
+        <td>Total</td>
+        <td>18</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>64.5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="display-5">GPA</td>
+            <td class="display-5">3.7</td>
+        </tr>
+      </table>
+      
+     -->
+    <div id="display"></div>
+
+    
+    
+    
+    
+
+    
+   
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

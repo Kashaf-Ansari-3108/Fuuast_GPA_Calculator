@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+.one{
+    width: 50%;
+}
+.table,.navbar{
+    margin: 20px;
+}
+.credits{
+    width: 80px;
+}
+.course{
+    width: 200px;
+}
+.marks{
+    width:100px;
+}
+
+@media only screen and (max-width: 900px) {
+   
+      .table,.navbar{
+       width: 100%  !important;
+      }
+    
+  }
